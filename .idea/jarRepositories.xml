@@ -7,6 +7,11 @@
       <option name="url" value="http://10.12.26.24:8081/nexus/content/repositories/clojars/" />
     </remote-repository>
     <remote-repository>
+      <option name="id" value="central" />
+      <option name="name" value="Central Repository" />
+      <option name="url" value="https://repo.maven.apache.org/maven2" />
+    </remote-repository>
+    <remote-repository>
       <option name="id" value="Apache_Release" />
       <option name="name" value="Apache_Release" />
       <option name="url" value="http://10.12.26.24:8081/nexus/content/repositories/Apache_Release/" />
