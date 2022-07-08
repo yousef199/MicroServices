@@ -13,7 +13,7 @@ public class CustomerController {
     @Autowired
     CustomerService customerService;
 
-    @PostMapping
+    @PostMapping(path = "/registerCustomer")
     public void customerRequest(@RequestBody CustomerRegistrationRequest customerRegistrationRequest){
         log.info("new customer request {}" , customerRegistrationRequest);
         customerService.registerCustomer(customerRegistrationRequest);
