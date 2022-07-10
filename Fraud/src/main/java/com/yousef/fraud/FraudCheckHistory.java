@@ -12,7 +12,7 @@ import java.time.LocalDateTime;
 @Builder @Data @NoArgsConstructor @AllArgsConstructor
 @Entity
 public class FraudCheckHistory {
-    @Id @SequenceGenerator(name = "fruad_id_sequence" , sequenceName = "fraud_id_sequence")
+    @Id @SequenceGenerator(name = "fraud_id_sequence" , sequenceName = "fraud_id_sequence")
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "customer_id_sequence")
     private Integer id;
     private Integer customerID;
