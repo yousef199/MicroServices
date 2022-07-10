@@ -1,7 +1,6 @@
 package com.yousef.fraud;
 
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
@@ -12,11 +11,12 @@ public class FraudService {
     private final FraudRepository fraudRepository;
 
     public boolean isFraudulentCustomer(Integer customerId){
+        boolean fraud = false;
         fraudRepository.save(FraudCheckHistory.builder()
                 .customerID(customerId)
-                .isFraudster(false)
+                .isFraudster(fraud)
                 .createdAt(LocalDateTime.now())
                 .build());
-        return false;
+        return fraud;
     }
 }

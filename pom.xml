@@ -12,6 +12,7 @@
     <module>Customer</module>
       <module>Fraud</module>
     <module>eureka-server</module>
+    <module>clients</module>
   </modules>
 
   <name>MicroServices</name>
@@ -22,9 +23,9 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
-    <spring-boot-maven-plugin-version>2.5.14</spring-boot-maven-plugin-version>
-    <spring-boot-dependencies-version>2.5.14</spring-boot-dependencies-version>
-    <spring.cloud-version>2020.0.4</spring.cloud-version>
+    <spring-boot-maven-plugin-version>2.5.7</spring-boot-maven-plugin-version>
+    <spring-boot-dependencies-version>2.5.7</spring-boot-dependencies-version>
+    <spring.cloud-version>2020.0.3</spring.cloud-version>
   </properties>
 
   <dependencyManagement>
@@ -54,6 +55,10 @@
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-test</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.cloud</groupId>
+      <artifactId>spring-cloud-starter-openfeign</artifactId>
     </dependency>
   </dependencies>
 
