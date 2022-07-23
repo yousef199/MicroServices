@@ -4,7 +4,6 @@ import com.yousef.clients.fraud.FraudCheckResponse;
 import com.yousef.clients.fraud.FraudClient;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
-import org.springframework.web.client.RestTemplate;
 
 
 @Service
@@ -20,9 +19,6 @@ public class CustomerService {
                 .build();
         customerRepository.saveAndFlush(customer);
         FraudCheckResponse fraudCheckResponse = fraudClient.isFraudster(customer.getId());
-        if(fraudCheckResponse != null && fraudCheckResponse.getIsFraudster()){
-            throw new IllegalStateException("is fraudster customer");
-        }
         if(fraudCheckResponse != null && fraudCheckResponse.getIsFraudster()){
             throw new IllegalStateException("is fraudster customer");
         }
