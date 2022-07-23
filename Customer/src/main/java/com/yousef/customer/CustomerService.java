@@ -23,5 +23,8 @@ public class CustomerService {
         if(fraudCheckResponse != null && fraudCheckResponse.getIsFraudster()){
             throw new IllegalStateException("is fraudster customer");
         }
+        if(fraudCheckResponse != null && fraudCheckResponse.getIsFraudster()){
+            throw new IllegalStateException("is fraudster customer");
+        }
     }
 }

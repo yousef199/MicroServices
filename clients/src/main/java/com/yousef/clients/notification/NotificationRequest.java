@@ -1,4 +1,4 @@
-package com.yousef.notification;
+package com.yousef.clients.notification;
 
 import lombok.Data;
 
